@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div id="categorias-header">
+            <button id="menu-categorias">Categories</button>
+            <div id="categorias-desplegable">
+                <ul>
+                    <li><a href="#" class="categoria" data-categoria="Vinyls">Vinyls</a></li>
+                    <li><a href="#" class="categoria" data-categoria="Turntables">Turntables</a></li>
+                    <li><a href="#" class="categoria" data-categoria="Mixers">Mixers</a></li>
+                    <li><a href="#" class="categoria" data-categoria="Needles">Needles</a></li>
+                    <li><a href="#" class="categoria" data-categoria="Speakers">Speakers</a></li>
+                    <li><a href="#" class="categoria" data-categoria="Headphones">Headphones</a></li>
+                    <li><a href="#" class="categoria" data-categoria="Trolleys & Bags">Trolleys & Bags</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="carrito-header">
+            <span id="icono-carrito">🛒</span>
+            <span id="total-productos">0</span> 
+            <div id="carrito-desplegable">
+                <h3>Shopping Cart</h3>
+                <ul id="lista-carrito"></ul>
+                <p>Total: <span id="total">0</span>€</p>
+                <button id="vaciar-carrito">delete products</button>
+            </div>
+        </div>
+        <div id="tienda-titulo">
+            <h1>SURCO</h1>
+            <p>Vinyl Records & DJ Gear</p>
+        </div>
+    </header>
+    <main id="productos">
+        <div class="producto" data-nombre="John Coltrane - A Love Supreme" data-precio="35" data-categoria="Vinyls">
+            <img src="images/coltrane.jpg" alt="John Coltrane - A Love Supreme">
+            <p>John Coltrane - A Love Supreme</p>
+            <p>35€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Ortofon Concorde Club MKII Twin" data-precio="280" data-categoria="Needles">
+            <img src="images/ortofon.jpg" alt="Ortofon Concorde Club MKII Twin">
+            <p>Ortofon Concorde Club MKII Twin</p>
+            <p>280€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Magma LP Bag 40" data-precio="50" data-categoria="Trolleys & Bags">
+            <img src="images/magma.jpg" alt="Magma LP Bag 40">
+            <p>Magma LP Bag 40</p>
+            <p>50€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Technics SL-1210 MK 7" data-precio="969" data-categoria="Turntables">
+            <img src="images/technics.jpg" alt="Technics SL-1210 MK 7">
+            <p>Technics SL-1210 MK 7</p>
+            <p>969€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Goldie - Timeless" data-precio="65" data-categoria="Vinyls">
+            <img src="images/goldie.jpg" alt="Goldie - Timeless">
+            <p>Goldie - Timeless</p>
+            <p>65€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Vestax VMC-004" data-precio="250" data-categoria="Mixers">
+            <img src="images/vestax.jpg" alt="Vestax VMC-004">
+            <p>Vestax VMC-004</p>
+            <p>250€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Audio Technica M50x" data-precio="145" data-categoria="Headphones">
+            <img src="images/audiotechnica.jpg" alt="Audio Technica M50x">
+            <p>Audio Technica M50x</p>
+            <p>145€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="M-Audio BX5 (Pair)" data-precio="200" data-categoria="Speakers">
+            <img src="images/bx5.jpg" alt="M-Audio BX5 (Pair)">
+            <p>M-Audio BX5 (Pair)</p>
+            <p>200€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Sade - Stronger Than Pride" data-precio="27" data-categoria="Vinyls">
+            <img src="images/sade.jpg" alt="Sade - Stronger Than Pride">
+            <p>Sade - Stronger Than Pride</p>
+            <p>27€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Drexciya - Neptune's Lair" data-precio="80" data-categoria="Vinyls">
+            <img src="images/drexciya.jpg" alt="Drexciya - Neptune's Lair">
+            <p>Drexciya - Neptune's Lair</p>
+            <p>80€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Akiyama Acura" data-precio="350" data-categoria="Turntables">
+            <img src="images/acura.jpg" alt="Akiyama Acura">
+            <p>Akiyama Acura</p>
+            <p>350€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Allen & Heath Xone:42" data-precio="700" data-categoria="Mixers">
+            <img src="images/xone42.jpg" alt="Allen & Heath Xone:42">
+            <p>Allen & Heath Xone:42</p>
+            <p>700€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="The Prodigy - Experience" data-precio="40" data-categoria="Vinyls">
+            <img src="images/prodigy.jpg" alt="The Prodigy - Experience">
+            <p>The Prodigy - Experience</p>
+            <p>40€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="UDG LP Bag Trolley Deluxe" data-precio="185" data-categoria="Trolleys & Bags">
+            <img src="images/udg.jpg" alt="UDG LP Bag Trolley Deluxe">
+            <p>UDG LP Bag Trolley Deluxe</p>
+            <p>185€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="KRK Korkit RP5 G5 (Pair)" data-precio="350" data-categoria="Speakers">
+            <img src="images/krk.jpg" alt="KRK Rokit RP5 G5 (Pair)">
+            <p>KRK Rokit RP5 G5 (Pair)</p>
+            <p>350€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Kraftwerk - Autobahn" data-precio="40" data-categoria="Vinyls">
+            <img src="images/autobahn.jpg" alt="Kraftwerk - Autobahn">
+            <p>Kraftwerk - Autobahn</p>
+            <p>40€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Ortofon Concorde Scratch  MKII Twin" data-precio="245" data-categoria="Needles">
+            <img src="images/scratch.jpg" alt="Ortofon Concorde Scratch  MKII Twin">
+            <p>Ortofon Concorde Scratch  MKII Twin</p>
+            <p>245€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Pioneer DJ DJM-250 MK2" data-precio="400" data-categoria="Mixers">
+            <img src="images/djm250.jpg" alt="Pioneer DJ DJM-250MK2">
+            <p>Pioneer DJ DJM-250MK2</p>
+            <p>250€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Pink Floyd - Wish You Were Here" data-precio="30" data-categoria="Vinyls">
+            <img src="images/pinkfloyd.png" alt="Pink Floyd - Wish You Were Here">
+            <p>Pink Floyd - Wish You Were Here</p>
+            <p>30€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="ADAM Audio A7X (Pair)" data-precio="999" data-categoria="Speakers">
+            <img src="images/adam.jpeg" alt="ADAM Audio A7X (Pair)">
+            <p>ADAM Audio A7X (Pair)</p>
+            <p>999€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Djrum - Portrait with Firewood" data-precio="70" data-categoria="Vinyls">
+            <img src="images/djrum.jpg" alt="Djrum - Portrait with Firewood">
+            <p>Djrum - Portrait with Firewood</p>
+            <p>70€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Magma LP Bag 100 Trolley" data-precio="160" data-categoria="Trolleys & Bags">
+            <img src="images/magmatrolley.jpg" alt="Magma LP Bag 100 Trolley">
+            <p>Magma LP Bag 100 Trolley</p>
+            <p>160€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Camarón de la Isla - Potro de Rabia y Miel" data-precio="30" data-categoria="Vinyls">
+            <img src="images/camaron.jpg" alt="Camarón de la Isla - Potro de Rabia y Miel">
+            <p>Camarón de la Isla - Potro de Rabia y Miel</p>
+            <p>30€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="AIAIAI TMA-2 DJ XE" data-precio="125" data-categoria="Headphones">
+            <img src="images/aiaiai.jpg" alt="AIAIAI TMA-2 DJ XE">
+            <p>AIAIAI TMA-2 DJ XE</p>
+            <p>125€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Autechre - Amber" data-precio="35" data-categoria="Vinyls">
+            <img src="images/amber.jpg" alt="Autechre - Amber">
+            <p>Autechre - Amber</p>
+            <p>35€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Sennheiser HD-25" data-precio="135" data-categoria="Headphones">
+            <img src="images/hd25.jpg" alt="Sennheiser HD-25">
+            <p>Sennheiser HD-25</p>
+            <p>135€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Pioneer DJ PLX 1000" data-precio="750" data-categoria="Turntables">
+            <img src="images/plx.jpg" alt="Pioneer DJ PLX 1000">
+            <p>Pioneer DJ PLX 1000</p>
+            <p>750€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Enrique Morente, Lagartija Nick - Omega" data-precio="35" data-categoria="Vinyls">
+            <img src="images/morente.jpg" alt="Enrique Morente, Lagartija Nick - Omega">
+            <p>Enrique Morente, Lagartija Nick - Omega</p>
+            <p>35€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Ortofon Concorde MKII DJ Twin" data-precio="199" data-categoria="Needles">
+            <img src="images/djtwin.jpg" alt="Ortofon Concorde MKII DJ Twin">
+            <p>Pioneer DJ PLX 1000</p>
+            <p>199€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+        <div class="producto" data-nombre="Scientist - Scientist Meets The Space Invaders" data-precio="30" data-categoria="Vinyls">
+            <img src="images/scientist.jpg" alt="Scientist - Scientist Meets The Space Invaders">
+            <p>Scientist - Scientist Meets The Space Invaders</p>
+            <p>30€</p>
+            <input type="number" min="1" value="1">
+            <button class="agregar">🛒</button>
+        </div>
+    </main>
+    <script src="tiendaVirtual.js"></script>
+</body>
+</html>
